@@ -1,7 +1,20 @@
-Project steps:
+Project Summary
+
+
+Project Plan:
 
 - install material ui including fonts/ icons
 - install framer motion
+install redux
+install rxjs
+- set up redux store:
+    - ACTIONS
+        - start game
+        - join game 
+        - leave game
+        - add name
+        - PLAY MOVE
+        - more
 - set up server 
     - to accept user name/ login
     - start game
