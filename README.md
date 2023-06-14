@@ -32,5 +32,4 @@ install rxjs
 
 
 Completed steps:
-- create Redux actions and reducers 
-- actions added
+- redux actions added
