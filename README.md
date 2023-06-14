@@ -1,5 +1,7 @@
-Project Summary
+Project Summary:
 
+A two player tic-tac-toe game hosted online.
+Built with React and Redux. Additional functionality added with RXJS (for learning purposes)
 
 Project Plan:
 
@@ -15,7 +17,7 @@ install rxjs
         - add name
         - PLAY MOVE
         - more
-- set up server 
+- set up express server 
     - to accept user name/ login
     - start game
     - to accept a turn being played
@@ -27,3 +29,8 @@ install rxjs
     - player section (Enter/ show name/your turn/ you win)
     - start game/ forfeit/ offer draw
     - 
+
+
+Completed steps:
+- create Redux actions and reducers 
+- actions added
