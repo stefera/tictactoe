@@ -1,4 +1,6 @@
+import { createReducer } from "@reduxjs/toolkit";
 import { Action, InitialState } from "./types";
+import * as actions from "./actions"
 
 const initialState = {
   playerOne: {
@@ -12,17 +14,29 @@ const initialState = {
   board: Array(9).fill(null),
 };
 
-const rootReducer = (state:InitialState = initialState, action:Action) => {
-  switch (action.type) {
-    case "startGame": {
-    }
-    case "playMove": {
-    }
-    case "endGame": {
-    }
-    case "joinGame": {
-    }
-    case "changeName": {
-    }
-  }
-};
+// Old way of creating rootReducer
+
+// const rootReducer = (state:InitialState = initialState, action:Action) => {
+//   switch (action.type) {
+//     case "startGame": {
+//     }
+//     case "playMove": {
+//     }
+//     case "endGame": {
+//     }
+//     case "joinGame": {
+//     }
+//     case "changeName": {
+//     }
+//   }
+// };
+
+export const reducer = createReducer(initialState,(builder)=>{
+  builder
+    .addCase(actions.startGame, (state, action)=>{
+
+      state = {...initialState, playerOne:{id:1, name: action.payload.newName}}
+      
+    })
+    //.addCase
+})

@@ -14,4 +14,11 @@ type Player = {
     name:string,
 }
 
-type Square = (null | 1 | 2)
+export type Payload = {
+    id?:number
+    newName?:string,
+    position?:number,
+    move?:Square
+}
+
+type Square = (null | 1 | 2) // null is no move, 1 is noughts, 2 is crosses
